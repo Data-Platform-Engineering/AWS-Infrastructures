@@ -1,0 +1,1 @@
+A guide to provision a RDS postgresDB instance on AWS using Terraform.
