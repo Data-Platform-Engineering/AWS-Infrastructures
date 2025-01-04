@@ -1,10 +1,10 @@
 resource "aws_security_group" "rds_allow_tls" {
-  name        = "rds_allow_tls"
+  name        = "rds-allow-tls"
   description = "Allow TLS inbound traffic and all outbound traffic"
-  vpc_id      = aws_vpc.rds-vpc.id
+  vpc_id      = aws_vpc.rds_vpc.id
 
   tags = {
-    Name = "allow_tls"
+    Name = "rds_allow_tls"
   }
 }
 

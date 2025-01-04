@@ -16,7 +16,8 @@ resource "aws_db_instance" "dpe_postgresdb" {
   vpc_security_group_ids  = [aws_security_group.rds_allow_tls.id]
 
   tags = {
-    Name = "DPE RDS PostgresDB"
+    Name  = "DPE RDS PostgresDB"
+    Owner = "Data Platform Team"
   }
 
   timeouts {

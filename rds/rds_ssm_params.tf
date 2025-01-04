@@ -4,8 +4,13 @@ resource "aws_ssm_parameter" "rds_postgres_username" {
   value = "dpeadmin"
 }
 
+resource "random_password" "rds_postgres_password" {
+  length  = 24
+  special = false
+}
+
 resource "aws_ssm_parameter" "rds_postgres_password" {
   name  = "/dpe/rds_postgres/password"
   type  = "String"
-  value = "Password123"
+  value = random_password.rds_postgres_password.result
 }
