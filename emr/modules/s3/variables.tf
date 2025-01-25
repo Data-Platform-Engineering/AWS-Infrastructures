@@ -1,4 +1,4 @@
 
 variable "bucket_name" {
-    default = "femmyte-emr-file-bucket"
+    default = "dpe-emr-file-bucket"
 }
