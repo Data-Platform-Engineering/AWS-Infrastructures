@@ -1,5 +1,5 @@
 locals {
-    RESOURCE_PREFIX = "femmyte"
+    RESOURCE_PREFIX = "DPE"
 }
 
 module "emr" {
